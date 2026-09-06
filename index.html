@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abimakoc Place | Mascotas, Tecnología y Herramientas</title>
+    <style>
+        :root {
+            --bg-dark: #2A2A2A;
+            --bg-card: #333333;
+            --text-main: #FFFFFF;
+            --text-muted: #CCCCCC;
+            --accent: #4A90E2;
+            --whatsapp-green: #25D366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1F1F1F;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: var(--text-main);
+            border-bottom: 2px solid #444;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #444;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .about {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 3rem;
+            border: 1px solid #444;
+        }
+
+        .about h2 {
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-green);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1F1F1F;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abimakoc Place</h1>
+        <p>Tu espacio de confianza para Mascotas, Tecnología y Herramientas</p>
+    </header>
+
+    <div class="container">
+        
+        <div style="text-align: center;">
+            <h2 class="section-title">Nuestras Categorías</h2>
+        </div>
+
+        <div class="categories">
+            <div class="card">
+                <h3>🐾 Mascotas</h3>
+                <p>Alimentos de alta calidad, accesorios y consentidos cuidados para tus fieles compañeros peludos.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Tecnología</h3>
+                <p>Gadgets, consolas, accesorios de audio y soluciones innovadoras para tu día a día.</p>
+            </div>
+            <div class="card">
+                <h3>🔧 Herramientas</h3>
+                <p>Equipos y herramientas duraderas y eficientes para tus proyectos y reparaciones.</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En <strong>Abimakoc Place</strong> nos apasiona ofrecerte una selección curada de productos funcionales y de excelente calidad. Comunicate con nosotros de forma directa para recibir asesoría personalizada y conocer disponibilidad inmediata.</p>
+        </div>
+
+    </div>
+
+    <!-- Botón flotante de WhatsApp con tu número y saludo precargado -->
+    <a href="https://wa.me/573138038356?text=Hola%20Abimakoc%20Place,%20estoy%20interesado%20en%20sus%20productos." class="whatsapp-float" target="_blank">
+        💬 Escríbenos por WhatsApp
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Abimakoc Place. Todos los derechos reservados. Bogotá, Colombia.</p>
+    </footer>
+
+</body>
+</html>
